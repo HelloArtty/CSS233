@@ -4,26 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
+
 <body>
     <form>
         <h1>
             Sign up with your email address
         </h1>
-            <input type="email" name="email" placeholder="Email"><br>
-            <input type="email" name="confirm_email"  placeholder="Confirm email "><br>
-            <input type="password" name="password"  placeholder="Password"><br>
-            <input type="password" name="confirm_password"  placeholder="What should we call you?"><br>
-            <label for="date">Date of birth</label>
-            
-
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-            </label><br>
-            
-            <input type="submit" value="Sign up">
-        
+        <div>
+            <input type="email" placeholder="Email">
+        </div>
+        <div>
+            <input type="email" placeholder="Confirm email">
+        </div>
+        <div>
+            <input type="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="text" placeholder="What should we call you?">
+        </div>
+        <div>
+            <br>
+            <div>Date of birth:</div>
+            <input list="month" placeholder="Month">
+            <datalist id="month">
+                <option value="January">
+                <option value="February">
+                <option value="March">
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+            </datalist>
+            <input type="number" placeholder="Day" class="box">
+            <input type="number" placeholder="Year" class="box">
+        </div>
+        <div>
+            <input type="radio" name="gender">Male</input>
+            <input type="radio" name="gender">Female</input>
+            <input type="radio" name="gender">Non-binary</input>
+        </div>
+        <div>
+            <input type="checkbox">Share my registration data with Spotify's content providers for marketing
+            purposes.
+        </div>
+        <p>
+            By clicking on Sign up, you agree to Spotify's
+            <a href="#">
+                Terms and Conditions of Use
+            </a>.
+        </p>
+        <p>
+            To learn more about how Spotify collects, uses, shares and protects your personal data please read
+            Spotify's
+            <a href="#">
+                Privacy Policy
+            </a>.
+        </p>
+        <button type="submit">Sign Up</button>
     </form>
 </body>
+
 </html>
+
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+
+    }
+
+    h1 {
+        color: black;
+    }
+
+    div {
+
+        color: rgb(104, 104, 104);
+    }
+
+    a {
+        color: green;
+        text-decoration: none;
+    }
+
+    input {
+        padding: 15px;
+        margin-top: 10px;
+        border: 1px solid #282929;
+        ;
+        background: #f1f1f1;
+    }
+
+    input[type=number],
+    input[list=month] {
+        width: 150px;
+    }
+
+    input[type=email],
+    input[type=text],
+    input[type=password] {
+        width: 350px;
+    }
+
+    button {
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 3rem;
+        width: 15rem;
+        height: 3rem;
+    }
+</style>
