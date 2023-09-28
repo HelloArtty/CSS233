@@ -165,12 +165,12 @@ h3{
     align-items: center;
     margin-top: 1%;
 }
-.gallery .flex-img{
+.gallery .flex_img{
     flex: 25%;
     max-width: 25%;
     padding: 0 6px;
 }
-.gallery .flex-img img{
+.gallery .flex_img img{
     width: 100%;
     opacity: 50%;
     margin-top: 15px;
