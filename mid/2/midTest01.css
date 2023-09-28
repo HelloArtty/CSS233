@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(35,148,255,1) 0%, rgba(255,0,0,1) 100%);
+    position: relative;
+    z-index: -1000;
+    height: 100vh;
+    
+}
+
+.box{
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 15px;
+    bottom:0;
+    width: 170.5vh;
+    height: 96.5vh;
+    z-index: -100;
+    margin: 15px;
+    border-radius: 10px;;
+    
+}
+.text{
+    color: black;
+    position: static;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 60px;
+    width: 420px;
+    z-index: 100;
+
+}
+.text1{
+    font-size: 25px;
+    font-weight: normal;
+}
+.text2{
+    font-size: 45px;
+    font-weight: bold;
+
+}
+.text3{
+    font-size: 35px;
+    font-weight: normal;
+}
+.text4{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+input{
+    width: 220px;
+    height: 40px;
+    font-size: 20px;
+}
+button{
+    height: 40px;
+    font-size: 20px;
+    width: 80px;
+}
+
+.image{
+    width: 1000px;
+    margin-left: 550px;
+    position: relative;
+    z-index: 5;
+    margin-top: -245px;
+}
+
+.image_photo{
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    width: 45%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 20px;
+    transition: all 0.2s;
+    
+}
+
+.image_1{
+    top:-170px;
+    left: 0;
+
+}
+.image_2{
+    top: -150px;
+    right: 150px;
+    z-index: 1;
+    
+}
+.image_3{
+    top: -30px;
+    left: 20%;
+    
+}
+
+
+.image_photo:hover{
+    box-shadow:  0 20px 40px rgba(0,0,0,0.5);
+    border: 10px solid rgba(255, 0, 0, 0.5);
+    transform: scale(1.05) translateY(-20px);
+    z-index: 20;
+}
+
+.image:hover image:not(:hover){
+    transform: scale(0.9);
+}
+
+.content{
+    display: flex;
+    margin-top: 300px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+}
+
+.box-content{
+    background-color: rgba(241, 241, 241, 0.4);
+    margin: 15px;
+    padding: 20px;
+    font-size: 30px;
+    height: 275px;
+    width: 550px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box-content:hover{
+    opacity: 1;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    transform: scale(1.05) translateY(-10px);
+    z-index: 20;
+}
+
+.icon{
+    width: 30%;
+    height: 30%;
+}
